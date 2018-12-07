@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E7C9F5921A92403002D66D2 /* NTSAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9F5821A92403002D66D2 /* NTSAppDelegate.swift */; };
+		3E7C9F6021A92408002D66D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7C9F5F21A92408002D66D2 /* Assets.xcassets */; };
+		3E7C9F6321A92408002D66D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7C9F6121A92408002D66D2 /* LaunchScreen.storyboard */; };
+		3E7C9F6E21A92408002D66D2 /* NTSPhotoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9F6D21A92408002D66D2 /* NTSPhotoViewerTests.swift */; };
+		3E7C9F7921A92408002D66D2 /* NTSPhotoViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9F7821A92408002D66D2 /* NTSPhotoViewerUITests.swift */; };
+		3E7C9F9221A92EA8002D66D2 /* NSObject+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9F8A21A92EA8002D66D2 /* NSObject+Observable.swift */; };
+		3E7C9F9321A92EA8002D66D2 /* UIControls+Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9F8B21A92EA8002D66D2 /* UIControls+Bindable.swift */; };
+		3E7C9F9421A92EA8002D66D2 /* NTSObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9F8D21A92EA8002D66D2 /* NTSObservable.swift */; };
+		3E7C9F9521A92EA8002D66D2 /* NTSBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9F8E21A92EA8002D66D2 /* NTSBindable.swift */; };
+		3E7C9F9621A92EA8002D66D2 /* NTSBlockBasedSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9F8F21A92EA8002D66D2 /* NTSBlockBasedSelector.swift */; };
+		3E7C9F9721A92EA8002D66D2 /* NTSDynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9F9021A92EA8002D66D2 /* NTSDynamicValue.swift */; };
+		3E7C9F9821A92EA8002D66D2 /* NTSBlockBasedSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9F9121A92EA8002D66D2 /* NTSBlockBasedSelector.m */; };
+		3E7C9FA521A935C9002D66D2 /* NTSExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FA421A935C9002D66D2 /* NTSExtensions.swift */; };
+		3E7C9FA721A93694002D66D2 /* NTSAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FA621A93694002D66D2 /* NTSAppConstants.swift */; };
+		3E7C9FA921A936DE002D66D2 /* NTSPhotoViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7C9FA821A936DE002D66D2 /* NTSPhotoViewer.storyboard */; };
+		3E7C9FAB21A93736002D66D2 /* NTSPhotoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FAA21A93736002D66D2 /* NTSPhotoListController.swift */; };
+		3E7C9FB021A93C16002D66D2 /* NTSThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FAF21A93C16002D66D2 /* NTSThumbnailCell.swift */; };
+		3E7C9FB221A93D0C002D66D2 /* NTSPhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FB121A93D0C002D66D2 /* NTSPhotoListViewModel.swift */; };
+		3E7C9FB421A93E2D002D66D2 /* NTSThumbnailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FB321A93E2D002D66D2 /* NTSThumbnailCellViewModel.swift */; };
+		3E7C9FB621A9402E002D66D2 /* NTSProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FB521A9402E002D66D2 /* NTSProtocols.swift */; };
+		3E7C9FB821A94F97002D66D2 /* NTSPhotoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FB721A94F97002D66D2 /* NTSPhotoFetcher.swift */; };
+		3E7C9FBC21A9508F002D66D2 /* NTSAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FBB21A9508F002D66D2 /* NTSAPIClient.swift */; };
+		3E7C9FC221A95FEE002D66D2 /* NTSPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FC121A95FEE002D66D2 /* NTSPhotoModel.swift */; };
+		3E7C9FC421A992ED002D66D2 /* NTSCachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FC321A992ED002D66D2 /* NTSCachable.swift */; };
+		3E7C9FC821AB187C002D66D2 /* NTSPhotoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FC721AB187C002D66D2 /* NTSPhotoDetailController.swift */; };
+		3E7C9FCA21AB1969002D66D2 /* NTSPhotoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FC921AB1969002D66D2 /* NTSPhotoDetailViewModel.swift */; };
+		3E7C9FCE21AB3E1F002D66D2 /* NTSNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FCD21AB3E1F002D66D2 /* NTSNetworkResponse.swift */; };
+		3E7C9FD021AB3E86002D66D2 /* NTSReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C9FCF21AB3E86002D66D2 /* NTSReachability.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E7C9F6A21A92408002D66D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7C9F4D21A92403002D66D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7C9F5421A92403002D66D2;
+			remoteInfo = NTSPhotoViewer;
+		};
+		3E7C9F7521A92408002D66D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7C9F4D21A92403002D66D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7C9F5421A92403002D66D2;
+			remoteInfo = NTSPhotoViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E7C9F5521A92403002D66D2 /* NTSPhotoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTSPhotoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7C9F5821A92403002D66D2 /* NTSAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSAppDelegate.swift; sourceTree = "<group>"; };
+		3E7C9F5F21A92408002D66D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E7C9F6221A92408002D66D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E7C9F6421A92408002D66D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7C9F6921A92408002D66D2 /* NTSPhotoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTSPhotoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7C9F6D21A92408002D66D2 /* NTSPhotoViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSPhotoViewerTests.swift; sourceTree = "<group>"; };
+		3E7C9F6F21A92408002D66D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7C9F7421A92408002D66D2 /* NTSPhotoViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTSPhotoViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7C9F7821A92408002D66D2 /* NTSPhotoViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSPhotoViewerUITests.swift; sourceTree = "<group>"; };
+		3E7C9F7A21A92408002D66D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7C9F8A21A92EA8002D66D2 /* NSObject+Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Observable.swift"; sourceTree = "<group>"; };
+		3E7C9F8B21A92EA8002D66D2 /* UIControls+Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControls+Bindable.swift"; sourceTree = "<group>"; };
+		3E7C9F8C21A92EA8002D66D2 /* NTSBlockBasedSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSBlockBasedSelector.h; sourceTree = "<group>"; };
+		3E7C9F8D21A92EA8002D66D2 /* NTSObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTSObservable.swift; sourceTree = "<group>"; };
+		3E7C9F8E21A92EA8002D66D2 /* NTSBindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTSBindable.swift; sourceTree = "<group>"; };
+		3E7C9F8F21A92EA8002D66D2 /* NTSBlockBasedSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTSBlockBasedSelector.swift; sourceTree = "<group>"; };
+		3E7C9F9021A92EA8002D66D2 /* NTSDynamicValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTSDynamicValue.swift; sourceTree = "<group>"; };
+		3E7C9F9121A92EA8002D66D2 /* NTSBlockBasedSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSBlockBasedSelector.m; sourceTree = "<group>"; };
+		3E7C9F9C21A93317002D66D2 /* NTSPhotoViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NTSPhotoViewer-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E7C9FA421A935C9002D66D2 /* NTSExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSExtensions.swift; sourceTree = "<group>"; };
+		3E7C9FA621A93694002D66D2 /* NTSAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSAppConstants.swift; sourceTree = "<group>"; };
+		3E7C9FA821A936DE002D66D2 /* NTSPhotoViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NTSPhotoViewer.storyboard; sourceTree = "<group>"; };
+		3E7C9FAA21A93736002D66D2 /* NTSPhotoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSPhotoListController.swift; sourceTree = "<group>"; };
+		3E7C9FAF21A93C16002D66D2 /* NTSThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSThumbnailCell.swift; sourceTree = "<group>"; };
+		3E7C9FB121A93D0C002D66D2 /* NTSPhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSPhotoListViewModel.swift; sourceTree = "<group>"; };
+		3E7C9FB321A93E2D002D66D2 /* NTSThumbnailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSThumbnailCellViewModel.swift; sourceTree = "<group>"; };
+		3E7C9FB521A9402E002D66D2 /* NTSProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSProtocols.swift; sourceTree = "<group>"; };
+		3E7C9FB721A94F97002D66D2 /* NTSPhotoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSPhotoFetcher.swift; sourceTree = "<group>"; };
+		3E7C9FBB21A9508F002D66D2 /* NTSAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSAPIClient.swift; sourceTree = "<group>"; };
+		3E7C9FC121A95FEE002D66D2 /* NTSPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSPhotoModel.swift; sourceTree = "<group>"; };
+		3E7C9FC321A992ED002D66D2 /* NTSCachable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSCachable.swift; sourceTree = "<group>"; };
+		3E7C9FC721AB187C002D66D2 /* NTSPhotoDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSPhotoDetailController.swift; sourceTree = "<group>"; };
+		3E7C9FC921AB1969002D66D2 /* NTSPhotoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSPhotoDetailViewModel.swift; sourceTree = "<group>"; };
+		3E7C9FCD21AB3E1F002D66D2 /* NTSNetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTSNetworkResponse.swift; sourceTree = "<group>"; };
+		3E7C9FCF21AB3E86002D66D2 /* NTSReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTSReachability.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E7C9F5221A92403002D66D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7C9F6621A92408002D66D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7C9F7121A92408002D66D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E7C9F4C21A92403002D66D2 = {
+			isa = PBXGroup;
+			children = (
+				3E7C9F5721A92403002D66D2 /* NTSPhotoViewer */,
+				3E7C9F6C21A92408002D66D2 /* NTSPhotoViewerTests */,
+				3E7C9F7721A92408002D66D2 /* NTSPhotoViewerUITests */,
+				3E7C9F5621A92403002D66D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E7C9F5621A92403002D66D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9F5521A92403002D66D2 /* NTSPhotoViewer.app */,
+				3E7C9F6921A92408002D66D2 /* NTSPhotoViewerTests.xctest */,
+				3E7C9F7421A92408002D66D2 /* NTSPhotoViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E7C9F5721A92403002D66D2 /* NTSPhotoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9FCB21AB36C0002D66D2 /* NTSAppLifeCycle */,
+				3E7C9F9D21A9344C002D66D2 /* NTSPhoto */,
+				3E7C9FB921A95053002D66D2 /* NTSNetwork */,
+				3E7C9F8621A92E4A002D66D2 /* NTSHelpers */,
+				3E7C9F5F21A92408002D66D2 /* Assets.xcassets */,
+				3E7C9F6121A92408002D66D2 /* LaunchScreen.storyboard */,
+				3E7C9F6421A92408002D66D2 /* Info.plist */,
+			);
+			path = NTSPhotoViewer;
+			sourceTree = "<group>";
+		};
+		3E7C9F6C21A92408002D66D2 /* NTSPhotoViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9F6D21A92408002D66D2 /* NTSPhotoViewerTests.swift */,
+				3E7C9F6F21A92408002D66D2 /* Info.plist */,
+			);
+			path = NTSPhotoViewerTests;
+			sourceTree = "<group>";
+		};
+		3E7C9F7721A92408002D66D2 /* NTSPhotoViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9F7821A92408002D66D2 /* NTSPhotoViewerUITests.swift */,
+				3E7C9F7A21A92408002D66D2 /* Info.plist */,
+			);
+			path = NTSPhotoViewerUITests;
+			sourceTree = "<group>";
+		};
+		3E7C9F8621A92E4A002D66D2 /* NTSHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9FA321A934A7002D66D2 /* NTSExtensions */,
+				3E7C9F9921A93087002D66D2 /* NTSUtils */,
+				3E7C9F8921A92EA8002D66D2 /* NTSBindable */,
+			);
+			path = NTSHelpers;
+			sourceTree = "<group>";
+		};
+		3E7C9F8921A92EA8002D66D2 /* NTSBindable */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9F8A21A92EA8002D66D2 /* NSObject+Observable.swift */,
+				3E7C9F8B21A92EA8002D66D2 /* UIControls+Bindable.swift */,
+				3E7C9F8D21A92EA8002D66D2 /* NTSObservable.swift */,
+				3E7C9F8E21A92EA8002D66D2 /* NTSBindable.swift */,
+				3E7C9F8F21A92EA8002D66D2 /* NTSBlockBasedSelector.swift */,
+				3E7C9F9021A92EA8002D66D2 /* NTSDynamicValue.swift */,
+				3E7C9F8C21A92EA8002D66D2 /* NTSBlockBasedSelector.h */,
+				3E7C9F9121A92EA8002D66D2 /* NTSBlockBasedSelector.m */,
+			);
+			path = NTSBindable;
+			sourceTree = "<group>";
+		};
+		3E7C9F9921A93087002D66D2 /* NTSUtils */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9F9C21A93317002D66D2 /* NTSPhotoViewer-Bridging-Header.h */,
+				3E7C9FA621A93694002D66D2 /* NTSAppConstants.swift */,
+				3E7C9FB521A9402E002D66D2 /* NTSProtocols.swift */,
+				3E7C9FC321A992ED002D66D2 /* NTSCachable.swift */,
+			);
+			path = NTSUtils;
+			sourceTree = "<group>";
+		};
+		3E7C9F9D21A9344C002D66D2 /* NTSPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9FA021A9347C002D66D2 /* Model */,
+				3E7C9F9F21A93475002D66D2 /* ViewModel */,
+				3E7C9F9E21A93470002D66D2 /* View */,
+				3E7C9FA221A93492002D66D2 /* ViewControllers */,
+				3E7C9FAE21A93BE2002D66D2 /* Cell */,
+				3E7C9FA121A93482002D66D2 /* DataFetcher */,
+			);
+			path = NTSPhoto;
+			sourceTree = "<group>";
+		};
+		3E7C9F9E21A93470002D66D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9FA821A936DE002D66D2 /* NTSPhotoViewer.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E7C9F9F21A93475002D66D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9FB121A93D0C002D66D2 /* NTSPhotoListViewModel.swift */,
+				3E7C9FB321A93E2D002D66D2 /* NTSThumbnailCellViewModel.swift */,
+				3E7C9FC921AB1969002D66D2 /* NTSPhotoDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3E7C9FA021A9347C002D66D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9FC121A95FEE002D66D2 /* NTSPhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E7C9FA121A93482002D66D2 /* DataFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9FB721A94F97002D66D2 /* NTSPhotoFetcher.swift */,
+			);
+			path = DataFetcher;
+			sourceTree = "<group>";
+		};
+		3E7C9FA221A93492002D66D2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9FAA21A93736002D66D2 /* NTSPhotoListController.swift */,
+				3E7C9FC721AB187C002D66D2 /* NTSPhotoDetailController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3E7C9FA321A934A7002D66D2 /* NTSExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9FA421A935C9002D66D2 /* NTSExtensions.swift */,
+			);
+			path = NTSExtensions;
+			sourceTree = "<group>";
+		};
+		3E7C9FAE21A93BE2002D66D2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9FAF21A93C16002D66D2 /* NTSThumbnailCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3E7C9FB921A95053002D66D2 /* NTSNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9FBB21A9508F002D66D2 /* NTSAPIClient.swift */,
+				3E7C9FCD21AB3E1F002D66D2 /* NTSNetworkResponse.swift */,
+				3E7C9FCF21AB3E86002D66D2 /* NTSReachability.swift */,
+			);
+			path = NTSNetwork;
+			sourceTree = "<group>";
+		};
+		3E7C9FCB21AB36C0002D66D2 /* NTSAppLifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C9F5821A92403002D66D2 /* NTSAppDelegate.swift */,
+			);
+			path = NTSAppLifeCycle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E7C9F5421A92403002D66D2 /* NTSPhotoViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7C9F7D21A92408002D66D2 /* Build configuration list for PBXNativeTarget "NTSPhotoViewer" */;
+			buildPhases = (
+				3E7C9F5121A92403002D66D2 /* Sources */,
+				3E7C9F5221A92403002D66D2 /* Frameworks */,
+				3E7C9F5321A92403002D66D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTSPhotoViewer;
+			productName = NTSPhotoViewer;
+			productReference = 3E7C9F5521A92403002D66D2 /* NTSPhotoViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E7C9F6821A92408002D66D2 /* NTSPhotoViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7C9F8021A92408002D66D2 /* Build configuration list for PBXNativeTarget "NTSPhotoViewerTests" */;
+			buildPhases = (
+				3E7C9F6521A92408002D66D2 /* Sources */,
+				3E7C9F6621A92408002D66D2 /* Frameworks */,
+				3E7C9F6721A92408002D66D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E7C9F6B21A92408002D66D2 /* PBXTargetDependency */,
+			);
+			name = NTSPhotoViewerTests;
+			productName = NTSPhotoViewerTests;
+			productReference = 3E7C9F6921A92408002D66D2 /* NTSPhotoViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E7C9F7321A92408002D66D2 /* NTSPhotoViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7C9F8321A92408002D66D2 /* Build configuration list for PBXNativeTarget "NTSPhotoViewerUITests" */;
+			buildPhases = (
+				3E7C9F7021A92408002D66D2 /* Sources */,
+				3E7C9F7121A92408002D66D2 /* Frameworks */,
+				3E7C9F7221A92408002D66D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E7C9F7621A92408002D66D2 /* PBXTargetDependency */,
+			);
+			name = NTSPhotoViewerUITests;
+			productName = NTSPhotoViewerUITests;
+			productReference = 3E7C9F7421A92408002D66D2 /* NTSPhotoViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E7C9F4D21A92403002D66D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Bappaditya Dey";
+				TargetAttributes = {
+					3E7C9F5421A92403002D66D2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3E7C9F6821A92408002D66D2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3E7C9F5421A92403002D66D2;
+					};
+					3E7C9F7321A92408002D66D2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3E7C9F5421A92403002D66D2;
+					};
+				};
+			};
+			buildConfigurationList = 3E7C9F5021A92403002D66D2 /* Build configuration list for PBXProject "NTSPhotoViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E7C9F4C21A92403002D66D2;
+			productRefGroup = 3E7C9F5621A92403002D66D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E7C9F5421A92403002D66D2 /* NTSPhotoViewer */,
+				3E7C9F6821A92408002D66D2 /* NTSPhotoViewerTests */,
+				3E7C9F7321A92408002D66D2 /* NTSPhotoViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E7C9F5321A92403002D66D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7C9FA921A936DE002D66D2 /* NTSPhotoViewer.storyboard in Resources */,
+				3E7C9F6321A92408002D66D2 /* LaunchScreen.storyboard in Resources */,
+				3E7C9F6021A92408002D66D2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7C9F6721A92408002D66D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7C9F7221A92408002D66D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E7C9F5121A92403002D66D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7C9FB821A94F97002D66D2 /* NTSPhotoFetcher.swift in Sources */,
+				3E7C9F9421A92EA8002D66D2 /* NTSObservable.swift in Sources */,
+				3E7C9FBC21A9508F002D66D2 /* NTSAPIClient.swift in Sources */,
+				3E7C9FCA21AB1969002D66D2 /* NTSPhotoDetailViewModel.swift in Sources */,
+				3E7C9F9821A92EA8002D66D2 /* NTSBlockBasedSelector.m in Sources */,
+				3E7C9FD021AB3E86002D66D2 /* NTSReachability.swift in Sources */,
+				3E7C9FCE21AB3E1F002D66D2 /* NTSNetworkResponse.swift in Sources */,
+				3E7C9FA521A935C9002D66D2 /* NTSExtensions.swift in Sources */,
+				3E7C9FB221A93D0C002D66D2 /* NTSPhotoListViewModel.swift in Sources */,
+				3E7C9FB621A9402E002D66D2 /* NTSProtocols.swift in Sources */,
+				3E7C9FAB21A93736002D66D2 /* NTSPhotoListController.swift in Sources */,
+				3E7C9FC221A95FEE002D66D2 /* NTSPhotoModel.swift in Sources */,
+				3E7C9FC821AB187C002D66D2 /* NTSPhotoDetailController.swift in Sources */,
+				3E7C9F9521A92EA8002D66D2 /* NTSBindable.swift in Sources */,
+				3E7C9F9221A92EA8002D66D2 /* NSObject+Observable.swift in Sources */,
+				3E7C9FB021A93C16002D66D2 /* NTSThumbnailCell.swift in Sources */,
+				3E7C9FA721A93694002D66D2 /* NTSAppConstants.swift in Sources */,
+				3E7C9FB421A93E2D002D66D2 /* NTSThumbnailCellViewModel.swift in Sources */,
+				3E7C9F9321A92EA8002D66D2 /* UIControls+Bindable.swift in Sources */,
+				3E7C9FC421A992ED002D66D2 /* NTSCachable.swift in Sources */,
+				3E7C9F5921A92403002D66D2 /* NTSAppDelegate.swift in Sources */,
+				3E7C9F9621A92EA8002D66D2 /* NTSBlockBasedSelector.swift in Sources */,
+				3E7C9F9721A92EA8002D66D2 /* NTSDynamicValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7C9F6521A92408002D66D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7C9F6E21A92408002D66D2 /* NTSPhotoViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7C9F7021A92408002D66D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7C9F7921A92408002D66D2 /* NTSPhotoViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E7C9F6B21A92408002D66D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7C9F5421A92403002D66D2 /* NTSPhotoViewer */;
+			targetProxy = 3E7C9F6A21A92408002D66D2 /* PBXContainerItemProxy */;
+		};
+		3E7C9F7621A92408002D66D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7C9F5421A92403002D66D2 /* NTSPhotoViewer */;
+			targetProxy = 3E7C9F7521A92408002D66D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E7C9F6121A92408002D66D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E7C9F6221A92408002D66D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E7C9F7B21A92408002D66D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E7C9F7C21A92408002D66D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E7C9F7E21A92408002D66D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NTSPhotoViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nts.NTSPhotoViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NTSPhotoViewer/NTSHelpers/NTSUtils/NTSPhotoViewer-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E7C9F7F21A92408002D66D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NTSPhotoViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nts.NTSPhotoViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NTSPhotoViewer/NTSHelpers/NTSUtils/NTSPhotoViewer-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E7C9F8121A92408002D66D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NTSPhotoViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nts.NTSPhotoViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NTSPhotoViewer.app/NTSPhotoViewer";
+			};
+			name = Debug;
+		};
+		3E7C9F8221A92408002D66D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NTSPhotoViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nts.NTSPhotoViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NTSPhotoViewer.app/NTSPhotoViewer";
+			};
+			name = Release;
+		};
+		3E7C9F8421A92408002D66D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NTSPhotoViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nts.NTSPhotoViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NTSPhotoViewer;
+			};
+			name = Debug;
+		};
+		3E7C9F8521A92408002D66D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NTSPhotoViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nts.NTSPhotoViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NTSPhotoViewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E7C9F5021A92403002D66D2 /* Build configuration list for PBXProject "NTSPhotoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7C9F7B21A92408002D66D2 /* Debug */,
+				3E7C9F7C21A92408002D66D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7C9F7D21A92408002D66D2 /* Build configuration list for PBXNativeTarget "NTSPhotoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7C9F7E21A92408002D66D2 /* Debug */,
+				3E7C9F7F21A92408002D66D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7C9F8021A92408002D66D2 /* Build configuration list for PBXNativeTarget "NTSPhotoViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7C9F8121A92408002D66D2 /* Debug */,
+				3E7C9F8221A92408002D66D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7C9F8321A92408002D66D2 /* Build configuration list for PBXNativeTarget "NTSPhotoViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7C9F8421A92408002D66D2 /* Debug */,
+				3E7C9F8521A92408002D66D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E7C9F4D21A92403002D66D2 /* Project object */;
+}

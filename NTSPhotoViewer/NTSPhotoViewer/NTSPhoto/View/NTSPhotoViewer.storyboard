@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo List Controller-->
+        <scene sceneID="h9k-eH-gBA">
+            <objects>
+                <tableViewController storyboardIdentifier="NTSPhotoListController" id="KDy-wR-hzS" customClass="NTSPhotoListController" customModule="NTSPhotoViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tlm-VN-6bA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PhotoThumbnailCell" rowHeight="112" id="Wtg-6M-xtq" customClass="NTSThumbnailCell" customModule="NTSPhotoViewer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="112"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wtg-6M-xtq" id="rCH-EZ-llv">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="111.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="previewThumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="7dN-Bd-j4j">
+                                            <rect key="frame" x="16" y="8" width="96" height="96"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="96" id="qSp-yY-QxL"/>
+                                                <constraint firstAttribute="width" constant="96" id="xG7-hC-F2n"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL6-Of-Thl">
+                                            <rect key="frame" x="120" y="8" width="221" height="20.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="qL6-Of-Thl" secondAttribute="trailing" id="5WD-mo-Za3"/>
+                                        <constraint firstItem="qL6-Of-Thl" firstAttribute="top" secondItem="7dN-Bd-j4j" secondAttribute="top" id="RcI-Yk-Bxp"/>
+                                        <constraint firstItem="7dN-Bd-j4j" firstAttribute="leading" secondItem="rCH-EZ-llv" secondAttribute="leading" constant="16" id="S0h-MO-OBd"/>
+                                        <constraint firstItem="qL6-Of-Thl" firstAttribute="leading" secondItem="7dN-Bd-j4j" secondAttribute="trailing" constant="8" id="YBY-6K-mP4"/>
+                                        <constraint firstItem="7dN-Bd-j4j" firstAttribute="centerY" secondItem="rCH-EZ-llv" secondAttribute="centerY" id="abg-1F-bjQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="thumbnailImageView" destination="7dN-Bd-j4j" id="xcZ-uX-8Kj"/>
+                                    <outlet property="title" destination="qL6-Of-Thl" id="VlI-oq-PSu"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KDy-wR-hzS" id="CR8-TS-I39"/>
+                            <outlet property="delegate" destination="KDy-wR-hzS" id="77x-yG-pF9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="PP6-zs-PO2"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <segue destination="D3h-JB-Vk0" kind="show" identifier="SeguePhotoDetail" id="BZb-fX-I7k"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jmi-OD-UbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="177.66116941529236"/>
+        </scene>
+        <!--Photo Detail Controller-->
+        <scene sceneID="3MY-OW-1dT">
+            <objects>
+                <viewController id="D3h-JB-Vk0" customClass="NTSPhotoDetailController" customModule="NTSPhotoViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aay-Fc-lcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v8O-dk-CYS">
+                                <rect key="frame" x="16" y="80" width="343" height="571"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7ZU-hL-C5s">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v8O-dk-CYS" firstAttribute="top" secondItem="0P7-pe-Xi5" secondAttribute="top" constant="16" id="2xL-qu-lYe"/>
+                            <constraint firstItem="0P7-pe-Xi5" firstAttribute="trailing" secondItem="v8O-dk-CYS" secondAttribute="trailing" constant="16" id="3wa-bx-JJ9"/>
+                            <constraint firstItem="7ZU-hL-C5s" firstAttribute="centerY" secondItem="Aay-Fc-lcQ" secondAttribute="centerY" id="Qu5-47-mps"/>
+                            <constraint firstItem="v8O-dk-CYS" firstAttribute="leading" secondItem="0P7-pe-Xi5" secondAttribute="leading" constant="16" id="Vpq-Rd-JZW"/>
+                            <constraint firstItem="0P7-pe-Xi5" firstAttribute="bottom" secondItem="v8O-dk-CYS" secondAttribute="bottom" constant="16" id="bbd-s7-xiV"/>
+                            <constraint firstItem="7ZU-hL-C5s" firstAttribute="centerX" secondItem="Aay-Fc-lcQ" secondAttribute="centerX" id="v3k-DZ-VZR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0P7-pe-Xi5"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="7ZU-hL-C5s" id="Umm-j5-8cE"/>
+                        <outlet property="actualImageView" destination="v8O-dk-CYS" id="WoU-bc-q2U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCi-vI-DXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="178"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="previewThumbnail" width="16" height="16"/>
+    </resources>
+</document>
